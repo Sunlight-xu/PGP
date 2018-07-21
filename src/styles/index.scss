@@ -1,0 +1,127 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+//@import './../assets/icon/styleFont.css';
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+.app-container {
+  margin: 68px 16px;
+  padding: 20px;
+  //border: solid 1px #e6e6e6;
+  min-height: 600px;
+}
+ //头部标识
+.title {
+  border-bottom: solid 1px #e6e6e6;
+  margin-bottom: 32px;
+  padding-bottom: 8px;
+}
+.title-bottom {
+  border-bottom: solid 1px #00796a;
+  padding-bottom: 8px;
+}
+//分页
+.page {
+  text-align: center;
+  margin-top: 32px;
+}
+.min{
+  float: right;
+  font-size: .8em;
+  color: gray;
+  margin-right: -22px;
+  margin-top: -20px;
+}
+.btn-modal{
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-modal:hover{
+  color: #03d9be;
+}
+.btn-big{
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-big:hover{
+  color: #03d9be;
+}
+.container-modal{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px 0px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  backface-visibility: hidden;
+}

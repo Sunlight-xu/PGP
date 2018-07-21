@@ -1,0 +1,56 @@
+ //to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+.el-tabs__item{
+  color: #fff;
+}
+ .el-tabs__item.is-active {
+   color: #03d9be;
+ }
+ .el-tabs__item:hover {
+   color: #03d9be;
+   cursor: pointer;
+ }
+ .el-tabs__nav-next, .el-tabs__nav-prev{
+   color: #fff !important;
+ }
+ .el-tabs__active-bar {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 2px;
+   background-color: #019b88;
+   z-index: 1;
+   -webkit-transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+   transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+   transition: transform .3s cubic-bezier(.645,.045,.355,1);
+   transition: transform .3s cubic-bezier(.645,.045,.355,1), -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+   transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+   list-style: none;
+ }
